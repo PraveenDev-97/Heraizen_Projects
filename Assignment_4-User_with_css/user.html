@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+
+    <style>
+        
+        input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=reset] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: rgb(166, 165, 177);
+  }
+  
+  .right {
+    right: 0;
+    background-color: #111;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .button2 {background-color: #008CBA;} /* Blue */
+    
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  
+  <div class="split left">
+    <div class="centered">
+      <a href="file:///C:/Users/Praveen/Desktop/Heraizen/Assignment%20-%204/index.html"><button class="button2" style="padding-right: 10px;">Back</button></a>
+        <h1>User Data</h1> 
+      <form action="" id="userForm" onsubmit="addData(event);">
+        <label for="uname">User Name</label>
+        <input type="text" id="name" name="name" placeholder="Your user name.." required>
+    
+        <label for="phone_no">Phone No</label>
+        <input type="text" id="phnum" name="phnum" pattern="[6789][0-9]{9}" placeholder="Your Phone no.." maxlength="10" required>
+    
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" pattern=".+@gmail\.com" placeholder="Your Email.." required>
+        
+        <input type="hidden" id="id" />
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+        <input type="reset" value="Clear" class="btn btn-primary"/>
+    
+      </form>
+    </div>
+    </div>
+
+   
+    <div class="split right">
+      <div class="centered">
+        <!-- <div class="left"> -->
+        <!-- <div class="text-center"> -->
+        <h2>User Details</h2>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" style="width: 375px;
+        float: left;"/>
+        
+        <table id="myTable" class="table table-dark table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone Num</th>
+                    <th>Email</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Display user data -->
+            </tbody>
+        </div>
+    </div>
+    <script src="user.js"></script>
+</body>
+
+</html>
