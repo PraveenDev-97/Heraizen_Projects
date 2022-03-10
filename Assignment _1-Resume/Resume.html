@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Resume</title>
+  <style>
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.first {
+            width: 75%;
+            display: inline-block;
+        }
+  
+        .second {
+            width: 25%;
+            display: inline-block;
+        }
+        h3{
+          background-color: #E5E8E8;
+          width: auto;
+          margin: auto;
+        }
+  </style>
+</head>
+<body>
+<h1 style="text-align: center; color : #b30000;"><u>Resume Using HTML</u></h1>
+<div style="margin: auto; width: 60%; border: 3px solid #000033; padding: 10px;">
+  <table>
+    <td>
+  <h3>Praveen Bhaskar Devadiga</h3>
+  <address>Tel : 6362025605<br>
+  E-mail: devadiga478@gmail.com<br>
+  #195, Danabail, Hitlalli, Yellapur, Uttara<br>
+  Kannada, Karnataka - 581347</address></td>
+    <td>
+  <img src="DSLR.png" alt="Photo" width="100px" height="125px"> </td> </table>
+</div>
+
+<div style="margin: auto; width: 60%; border: 3px solid #000033; padding: 10px;">
+<h3>Education :</h3>
+<table>
+  <tr>
+    <th>Degree</th>
+    <th>Institute</th>
+    <th>Board / University</th>
+    <th>Year</th>
+    <th>% marks / CGPA</th>
+  </tr>
+  <tr>
+    <td>MCA</td>
+    <td>BMS College of Engineering, Bangalore</td>
+    <td>Autonomous College under VTU</td>
+    <td>2021</td>
+    <td style="padding-left: 6%;">8.74</td>
+  </tr>
+  <tr>
+    <td>BCA</td>
+    <td>JMJ BCA College Chippagi, Sirsi</td>
+    <td>Karnataka University Dharwad</td>
+    <td>2018</td>
+    <td style="padding-left: 6%;">76.07</td>
+  </tr>
+</table>
+</div>
+<div style="margin: auto; width: 60%; border: 3px solid #000033; padding: 10px;">
+  <h3>Internship Experience :</h3>
+    <h4>1. DreamPath Foundation</h4>
+      <ul>
+          <li>Role : Web Developer</li>
+          <li>Oct 2020 – Dec 2020 || Bangalore</li>
+          <li>During this internship period I worked on DreamPath Fondation’s Website.</li>
+          <li>Technologies used : HTML, CSS, Bootstrap.</li>
+      </ul>
+    <h4>2. CapX Creative Contest Pvt Ltd</h4>
+      <ul>
+          <li>Role : Application Developer</li>
+          <li>Mar 2021 – July 2021 || Kolkata</li>
+          <li>Here I worked on “CapX Scoreboard Application” .</li>
+          <li>Technologies used : ReactJs, PostgreSQL, Postman.</li>
+      </ul>
+</div>
+<div style="margin: auto; width: 60%; border: 3px solid #000033; padding: 10px;">
+  <h3>Project : </h3>
+    <h4>1. Project Title: “Raita Mitra” & “Raita Mitra Online Shopping”</h4>
+      <ul>
+          <li>Description: RaitaMitra contains information about more than 100 crops along with their growing
+            conditions. Raita Mitra Online Shopping an e-commerce web application to help local venders to buy
+            and sell organic food.</li>
+          <li>Technologies used: Html, CSS, JavaScript, PHP, Bootstrap, MySQL</li>
+      </ul>
+
+    <h4>2. Project Title: “Raita Mitra Chatbot”</h4>
+      <ul>
+          <li>Description: It’s embedded with “Raita Mitra” web application to solve user query.</li>
+          <li>Technologies used: Bootstrap, Html, CSS, JavaScript, Python, SQLLite3</li>
+      </ul>
+
+    <h4>3. Project Title: “Students Performance Management System”</h4>
+      <ul>
+          <li>Description: It is use to excel the interaction between teachers and parents using the modern technology.</li>
+          <li>Technologies used: HTML, JSP, MySQL</li>
+      </ul>
+</div>
+
+<div style="margin: auto; width: 60%; border: 3px solid #000033; padding: 10px;">
+  <h3>Software/Computer Proficiency :</h3>
+      <ul>
+          <li>Languages : Scripting Languages, Python, Java.</li>
+          <li>Database : MySQL, MongoDB.</li>
+          <li>Operating Systems : All Windows Family, Unix, Linux</li>
+      </ul>
+</div>
+<div style="margin: auto; width: 60%; border: 3px solid #000033; padding: 10px;">
+  <h3>Extra-Curricular Activities :</h3>
+      <ul>
+          <li>Attended IOT based workshop.</li>
+          <li>Attended Machine Learning value added course.</li>
+          <li>Worked as Volunteer and Participated in Phase Shift 2019.</li>
+          <li>Participated in SJCE Infotsava-2K19, Mysore (Tech Fest).</li>
+          <li>Participated in BITES Convention (2019-2020).</li>
+          <li>Participated in AIKYA activities: “Flood Relief Work” and “Swachhtha Hi Seva”.</li>
+      </ul>
+</div>
+
+<div style="margin: auto; width: 60%; border: 3px solid #000033; padding: 10px;">
+  <h3>Declaration :</h3>
+      <ul>
+          <p>I hereby declare that the above-mentioned information is correct up to my knowledge and I bear the
+            responsibility for the correctness of the above-mentioned particulars. </p>
+      </ul>
+      <p style="margin: auto;"><a id="current_date"></a> <a style="padding-left:550px">Signature</a></p><br><br>
+      <p style="margin: auto;"><a>Place: Bangalore</a> <a style="padding-left:550px">(Praveen)</p>
+  </div>
+</body>
+</html>
+
+<script>
+  date = new Date();
+  year = date.getFullYear();
+  month = date.getMonth() + 1;
+  day = date.getDate();
+  document.getElementById("current_date").innerHTML ="Date : " + day + "/" + month + "/" + year;
+</script>
